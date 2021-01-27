@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark myNav">
-    <img src="assets/img/logo.jpeg" width="50" height="50" class="d-inline-block align-top " alt=""> <span class="nombre text-white"><strong>NuestraTienda</strong> </span>
+    <a [routerLink]="['home']"> <img src="assets/img/logo.jpeg" width="50" height="50" class="d-inline-block align-top " alt=""> <span class="nombre text-white"><strong>NuestraTienda</strong> </span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -7,16 +7,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item c-white">
-                <a class="nav-link text-white" href="#">Cómo funciona </a>
+                <a class="nav-link text-white" [routerLink]="['funciona']">Cómo funciona </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link text-white" href="#">Por qué elegirnos </a>
+                <a class="nav-link text-white" [routerLink]="['elegir']">Por qué elegirnos </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link text-white" href="#">Ejemplos </a>
+                <a class="nav-link text-white" [routerLink]="['ejemplos']">Ejemplos </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link text-white" href="#">Precios</a>
+                <a class="nav-link text-white" [routerLink]="['precios']">Precios</a>
             </li>
         </ul>
         <li class="nav-item navbar-nav ">
