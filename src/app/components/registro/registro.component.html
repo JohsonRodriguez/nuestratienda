@@ -1,0 +1,123 @@
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <header class="myHed text-center mt-2">
+                    <p>Registrate en NuestraTienda</p>
+                    <p class="msj mt-2">Crea tu cuenta y empieza a vender por aplicación movil Yá!</p>
+                </header>
+
+                <form class="main-form " (ngSubmit)="guardar(userPost.value)" #userPost="ngForm">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <div class="form-group my-0">
+                                <label class="my-0">
+                                <i class="fas fa-user"></i>
+                                <input type="text" class="myInput" ngModel name="nombres" placeholder="Nombres" required>  
+                                </label>
+                            </div>
+                            <div class="form-group my-0">
+                                <label class="my-0">
+                                <i class="fas fa-user-friends"></i>
+                                 <input type="text" class="myInput" ngModel name="apellidos" placeholder="Apellidos" required> 
+                                </label>
+                            </div>
+                            <div class="form-group my-0">
+                                <label class="my-0">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" class="myInput" ngModel name="correo" data-culqi="card[email]" placeholder="Correo eléctronico" required> 
+                                </label>
+                            </div>
+                            <div class="form-group my-0">
+                                <label class="my-0">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" class="myInput" ngModel name="password" placeholder="Contraseña" required> 
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 izquierda">
+                            <div class="form-group my-0 ">
+                                <label class="my-0">
+                                 <small><strong class="text">Nombre del titular</strong></small>
+                                 <input type="text" class="myInput" ngModel name="nombreT" placeholder="Devin Caldwell" required>  
+                                 </label>
+                            </div>
+                            <div class="form-group my-0">
+                                <label class="my-0">
+                                <small> <strong class="text">Número de la tarjeta</strong></small>
+                                <i class="fas fa-credit-card text-muted derecha"></i>
+                                <input type="text" class="myInput" ngModel name="numeroT" data-culqi="card[number]" placeholder="1234-4567-4543-1685" required> 
+                                </label>
+                            </div>
+                            <div class="form-group my-0">
+                                <label class="my-0">
+                                <small> <strong class="text">Fecha de Expiración</strong></small>
+                                </label>
+                                <div class="form-group row">
+                                    <select class="myInput col-4 ml-3" ngModel name="mes" data-culqi="card[exp_month]">
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                    <select class="myInput col-4 ml-3" ngModel name="año" data-culqi="card[exp_year]">
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                        <option>2023</option>
+                                        <option>2024</option>
+                                        <option>2025</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Parte 4 -->
+                            <div class="form-group my-0 row">
+                                <!-- Caja CVV -->
+                                <div class="col-4">
+                                    <label class="my-0">
+                                    <small><strong class="text">CVV</strong></small>
+                                    <input type="text" class="myInput col-5 text-center" ngModel name="cvv" data-culqi="card[cvv]" placeholder="123" required>  
+                                  </label>
+                                </div>
+                                <!-- Caja CVV -->
+                                <!-- Combo planes -->
+                                <div class="col-4">
+                                    <label class="my-0">
+                                            <small><strong class="text">PLAN</strong></small>
+                                            <select class="myInput col-6 ml-2" ngModel name="plan">
+                                                <option>S/.399</option>
+                                                <option>S/.599</option>
+                                                <option>S/.799</option>
+                                            </select>
+                                    </label>
+                                </div>
+                                <!-- Combo planes -->
+                            </div>
+                            <!-- Parte 4 -->
+                        </div>
+                    </div>
+                    <div class="col-md-12 centrar">
+                        <label class="check_1 ">
+                            <input type="checkbox" checked required>Acepto los  <a href="">términos y condiciones</a>
+                        </label>
+                        <div class="form-group ">
+                            <label> 
+                            <input type="submit" class="form-control button" value="Crear cuenta" id="buyButton"> 
+                            </label>
+                            <p class="msj2 mt-3">Al ingresar tu correo electrónico, acepta recibir correos electrónicos de marketing de NuestraTienda.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
