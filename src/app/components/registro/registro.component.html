@@ -25,7 +25,7 @@
                             <div class="form-group my-0">
                                 <label class="my-0">
                                 <i class="fas fa-envelope"></i>
-                                <input type="email" class="myInput" ngModel name="correo" data-culqi="card[email]" placeholder="Correo eléctronico" required> 
+                                <input type="email" class="myInput" ngModel name="correo"  placeholder="Correo eléctronico" required> 
                                 </label>
                             </div>
                             <div class="form-group my-0">
@@ -39,15 +39,15 @@
                         <div class="col-md-6 izquierda">
                             <div class="form-group my-0 ">
                                 <label class="my-0">
-                                 <small><strong class="text">Nombre del titular</strong></small>
-                                 <input type="text" class="myInput" ngModel name="nombreT" placeholder="Devin Caldwell" required>  
+                                 <small><strong class="text">Nombre de tu Tienda</strong></small>
+                                 <input type="text" class="myInput" ngModel name="nombre" placeholder="Nuestra Tienda" required>  
                                  </label>
                             </div>
                             <div class="form-group my-0">
                                 <label class="my-0">
                                 <small> <strong class="text">Número de la tarjeta</strong></small>
                                 <i class="fas fa-credit-card text-muted derecha"></i>
-                                <input type="text" class="myInput" ngModel name="numeroT" data-culqi="card[number]" placeholder="1234-4567-4543-1685" required> 
+                                <input type="text" class="myInput" ngModel name="tarjeta" placeholder="1234-4567-4543-1685" required> 
                                 </label>
                             </div>
                             <div class="form-group my-0">
@@ -55,7 +55,7 @@
                                 <small> <strong class="text">Fecha de Expiración</strong></small>
                                 </label>
                                 <div class="form-group row">
-                                    <select class="myInput col-4 ml-3" ngModel name="mes" data-culqi="card[exp_month]">
+                                    <select class="myInput col-4 ml-3" ngModel name="mes">
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -69,7 +69,7 @@
                                         <option>11</option>
                                         <option>12</option>
                                     </select>
-                                    <select class="myInput col-4 ml-3" ngModel name="año" data-culqi="card[exp_year]">
+                                    <select class="myInput col-4 ml-3" ngModel name="año">
                                         <option>2020</option>
                                         <option>2021</option>
                                         <option>2022</option>
@@ -85,7 +85,7 @@
                                 <div class="col-4">
                                     <label class="my-0">
                                     <small><strong class="text">CVV</strong></small>
-                                    <input type="text" class="myInput col-5 text-center" ngModel name="cvv" data-culqi="card[cvv]" placeholder="123" required>  
+                                    <input type="text" class="myInput col-5 text-center" ngModel name="cvv"  placeholder="123" required>  
                                   </label>
                                 </div>
                                 <!-- Caja CVV -->
@@ -94,9 +94,10 @@
                                     <label class="my-0">
                                             <small><strong class="text">PLAN</strong></small>
                                             <select class="myInput col-6 ml-2" ngModel name="plan">
-                                                <option>S/.399</option>
-                                                <option>S/.599</option>
-                                                <option>S/.799</option>
+                                                <option>S/.299</option>
+                                                <option>S/.499</option>
+                                                <option>S/.899</option>
+                                                <option>S/.1999</option>
                                             </select>
                                     </label>
                                 </div>
@@ -111,7 +112,7 @@
                         </label>
                         <div class="form-group ">
                             <label> 
-                            <input type="submit" class="form-control button" value="Crear cuenta" id="buyButton"> 
+                            <input type="submit" class="form-control button" value="Crear cuenta" id="uyButton"> 
                             </label>
                             <p class="msj2 mt-3">Al ingresar tu correo electrónico, acepta recibir correos electrónicos de marketing de NuestraTienda.</p>
                         </div>
